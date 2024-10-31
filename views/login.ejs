@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+</head>
+<body>
+	<div class="container">
+		<div class="login-form">
+			<h2><i class="fas fa-lock"></i> Login</h2>
+			<form action="/login" method="POST">
+				<div class="input-field">
+					<i class="fas fa-user"></i> <input type="text" placeholder="Username" name="username" id="username" required>
+				</div>
+				<div class="input-field">
+					<i class="fas fa-lock"></i>
+					<input type="password" placeholder="Password" name="password" id="password" required>
+				</div>
+				<button type="submit">Login</i></button>
+				<p>Don't have an account? <a href="/register">Sign up</a></p>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* public/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light grey background */
+}
+
+#booking-form {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white; /* White background for the form */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    max-width: 700px; /* Limit the width of the form */
+    transition: transform 0.3s; /* Smooth transition for animation */
+}
+
+#booking-form:hover {
+    transform: scale(1.02); /* Slightly enlarge the form on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow effect on hover */
+}
+
+h1 {
+    text-align: center;
+    color: black; /* Dark grey for headings */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555; /* Medium grey for labels */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="radio"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[type="radio"] {
+    width: auto; /* Keep radio buttons small */
+}
+
+input[type="submit"] {
+    background-color: #333; /* Dark grey background for the button */
+    color: white; /* White text */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+input[type="submit"]:hover {
+    background-color: black; /* Lighter grey on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+button {
+    background-color: #333; /* Dark grey for the "Book Now" button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: black; /* Lighter grey on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}

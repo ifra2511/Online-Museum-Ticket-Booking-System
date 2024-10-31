@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0af; /* light gray background */
+  }
+  
+  .container {
+    width: 600px;
+    margin: 130px auto;
+    padding: 20px;
+    background-color: #fff; /* white background */
+    border: 1px solid #ddd; /* light gray border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+  }
+  .container:hover{
+    transform: scale(1.02); /* Slightly enlarge the form on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow effect on hover */
+  }
+  .login-form {
+    text-align: center;
+  }
+  
+  .input-field {
+    margin-bottom: 10px;
+    /* position: relative; */
+  }
+  
+  .input-field i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #666; /* dark gray icon color */
+  }
+  
+  .input-field input[type="text"], .input-field input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* light gray border */
+  }
+  
+  .input-field input[type="text"]:focus, .input-field input[type="password"]:focus {
+    border-color: #4CAF50; /* green border on focus */
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.2);
+  }
+  
+  button[type="submit"] {
+    background-color:#333;
+    color: #fff; /* white text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+
+  }
+  
+  button[type="submit"]:hover {
+    background-color: black; /* dark green background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+  }
+  
+  button[type="submit"]:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666; /* dark gray text */
+  }
+  
+  p a {
+    text-decoration: none;
+    color: #4CAF50; /* green link color */
+  }
+  
+  p a:hover {
+    color: #3e8e41; /* dark green link color on hover */
+  }
+  
+  /* Animation */
+  .login-form {
+    animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

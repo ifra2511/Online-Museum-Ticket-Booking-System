@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: black;
+    border-radius: 4px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-container button {
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-container button:hover {
+    transition: transform 0.2s ease; /* Add transition for smooth effect */
+}
+.museum-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+/* Museum Styles */
+
+.museum {
+  flex: 0 0 25%; /* 25% width, making 4 divs visible at a time */
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.museum:hover {
+  transform: scale(1.1);
+}
+
+.museum img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Button Styles */
+
+.show-more, .book-now, .show-less {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+
+}
+
+.show-more:hover, .book-now:hover, .show-less:hover {
+  background-color: black;
+  transform: scale(1.05); /* Slightly enlarge the button */
+
+}
+
+/* More Info Styles */
+
+.more-info {
+  display: none;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 0 0 10px 10px;
+}
+
+.museum.show-more-info .more-info {
+  display: block;
+}
+
+/* Show More Info Styles */
+
+.museum.show-more-info {
+  transform: scale(1.2); /* enlarge the div when "Show More" is pressed */
+  padding-bottom: 40px; /* add some space for the "Show Less" button */
+}
+
+.museum.show-more-info .show-more {
+  display: none; /* hide the "Show More" button */
+}
+
+.museum.show-more-info .show-less {
+  display: block; /* display the "Show Less" button */
+}
+
+/* Animation Styles */
+
+.museum {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.inner-text{
+  font-size: 13px;
+}
+.phrase{
+  font-size: 13px;
+  font-weight: bolder;
+  color: rgb(47, 47, 145);
+}
+/* public/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light grey background */
+}

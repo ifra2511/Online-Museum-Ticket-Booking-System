@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bookingStyle.css">
+    <title>Museum Booking</title>
+</head>
+<body>
+    <h1>Book Your Visit</h1>
+    <form id="booking-form" method="post">
+        <label for="name">Name of Visitor:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="no_of_visitors">Number of Visitors:</label>
+        <input type="number" id="no_of_visitors" name="no_of_visitors" required><br><br>
+
+        <label>Are you Indian?</label><br>
+        <input type="radio" id="indian-yes" name="is_indian" value="true" required>
+        <label for="indian-yes">Yes</label>
+        <input type="radio" id="indian-no" name="is_indian" value="false" required>
+        <label for="indian-no">No</label><br><br>
+
+        <label>Are you a Student?</label><br>
+        <input type="radio" id="student-yes" name="is_student" value="true" required>
+        <label for="student-yes">Yes</label>
+        <input type="radio" id="student-no" name="is_student" value="false" required>
+        <label for="student-no">No</label><br><br>
+
+      <a href="/submit"><input type="submit" value="Submit"></a>
+    </form>
+
+    <script type="module" src="/script.js"></script>
+</body>
+</html>
